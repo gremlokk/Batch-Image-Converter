@@ -131,13 +131,14 @@ class window(QWidget):
 			if os.path.isfile(file_directory) and file_name.lower().endswith(self.types):		
 				file_location = str(os.path.join(split_path,str(file_name)))
 				image = PythonMagick.Image(file_location)
-					
+				# This code reduce the size for larger files if need be
+				'''	
 				if image.size().width() >= 1024 and image.size().height() >= 1024:#1024 originally 		
 					w, h = image.size().width(), image.size().height()
 					image.resize("{}x{}".format(w/2, h/2))
 													
 					print 'File is large' #divide by 4 or 3
-
+				'''
 				converted_image_name = 'image_'+str(file_count+1)+str(self.filetypes.currentText())
 
 				image.write("{}".format(str(os.path.join(split_path,converted_image_name))))	
@@ -159,12 +160,13 @@ class window(QWidget):
 					file_location = str(os.path.join(file_directory,str(file)))
 					
 					image = PythonMagick.Image(file_location)
-					
+					# This code reduce the size for larger files if need be
+					'''
 					if image.size().width() >= 1024 and image.size().height() >= 1024:#1024 originally 
 						w, h = image.size().width(), image.size().height()
 						image.resize("{}x{}".format(w/2, h/2))							
 						print 'File is large' #divide by 4 or 3
-
+					'''
 					converted_image_name = 'image_'+str(file_count+1)+str(self.filetypes.currentText())
 
 					image.write("{}".format(str(os.path.join(self.saved_output_path,converted_image_name))))
