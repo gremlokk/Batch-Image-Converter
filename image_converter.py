@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 #install pyqt: sudo apt-get install python-qt4
-#https://github.com/Werkov/PyQt4/blob/master/examples/tools/regexp.py
 import os, errno, sys
 import time
 import PythonMagick
