@@ -1,6 +1,16 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
+'''
+	Authors: Fredrick Ryans
+	Last Modified: 9/25/2017
+
+	Description: This program provides a clean and simple GUI that allows pictures 
+	to be converted in batches. Acceptable formats include .jpg, .tiff, .png, and .pdf. 
+	Folders and files can also be renames to a cleaner format as well.
+	
+	
+'''
 #install pyqt: sudo apt-get install python-qt4
 import os, errno, sys
 import time
