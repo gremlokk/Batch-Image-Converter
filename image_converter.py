@@ -11,7 +11,6 @@
 	
 	
 '''
-#install pyqt: sudo apt-get install python-qt4
 import os, errno, sys
 import time
 import PythonMagick
