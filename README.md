@@ -1,14 +1,17 @@
 # Batch-Image-Converter
 
+The application converts a batch of images into .jpg, .tif, .png, and more by providing a user friendly GUI.
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
 The the python program can be executed in a Linux terminal by navigating to the directory that contains image_converter.py.
 Do the following once in the directory that contains image_converter.py:
 	
 	1. Run shell: ./image_converter.py
 		- if you do not have permission to run shell please do chmod u+x image_converter.py
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
