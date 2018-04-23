@@ -19,7 +19,7 @@ Python 2.7
 ### Installing
 
 ```
-
+Download the .py file and run in Python IDE.
 ```
 
 ## Built With
